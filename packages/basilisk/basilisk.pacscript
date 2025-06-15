@@ -1,8 +1,7 @@
 maintainer=("quileon <quileon@duck.com>")
-pkgname="basilisk-bin"
+pkgname="basilisk"
 pkgver="2025.04.22"
 pkgrel="2"
-gives=("basilisk")
 url="https://www.basilisk-browser.org/"
 arch=("amd64")
 pkgdesc="A XUL-based open-source web browser."

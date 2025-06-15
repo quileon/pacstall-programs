@@ -1,5 +1,4 @@
-pkgbase = basilisk-bin
-	gives = basilisk
+pkgbase = basilisk
 	pkgver = 2025.04.22
 	pkgrel = 2
 	pkgdesc = A XUL-based open-source web browser.
@@ -14,4 +13,4 @@ pkgbase = basilisk-bin
 	source = https://dl.basilisk-browser.org/basilisk-20250422154702.linux-x86_64-gtk3.tar.xz
 	sha256sums = e56a947df18c9ac5c5db726d15b87d16ca4389e876c87726909e06ac4f3255e6
 
-pkgname = basilisk-bin
+pkgname = basilisk

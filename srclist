@@ -1,23 +1,23 @@
 ### Auto-generated for pacstall-programs
 ### DO NOT EDIT. Use scripts/srcinfo.sh to build.
 ---
-pkgbase = basilisk
+pkgbase = basilisk-bin
+	gives = basilisk
 	pkgver = 2025.04.22
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = A XUL-based open-source web browser.
 	url = https://www.basilisk-browser.org/
 	arch = amd64
 	depends = libgtk-3-0
 	depends = libdbus-glib-1-2
 	depends = libxt6
-	conflicts = basilisk-bin
-	provides = web-browser
+	provides = basilisk
 	license = MPL-2.0
 	maintainer = quileon <quileon@duck.com>
 	source = https://dl.basilisk-browser.org/basilisk-20250422154702.linux-x86_64-gtk3.tar.xz
 	sha256sums = e56a947df18c9ac5c5db726d15b87d16ca4389e876c87726909e06ac4f3255e6
 
-pkgname = basilisk
+pkgname = basilisk-bin
 ---
 pkgbase = rum-wine
 	gives = rum
@@ -30,6 +30,7 @@ pkgbase = rum-wine
 	optdepends = wine
 	optdepends = wine-wow64
 	provides = rum
+	license = GPL-3.0-or-later
 	maintainer = quileon <quileon@duck.com>
 	source = git+https://gitlab.com/xkero/rum.git
 	sha256sums = SKIP

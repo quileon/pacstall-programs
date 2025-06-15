@@ -16,6 +16,7 @@ optdepends=(
   "wine-wow64"
 )
 provides=("rum")
+license=("GPL-3.0-or-later")
 
 package() {
   cd rum

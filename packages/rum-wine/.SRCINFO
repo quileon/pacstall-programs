@@ -9,6 +9,7 @@ pkgbase = rum-wine
 	optdepends = wine
 	optdepends = wine-wow64
 	provides = rum
+	license = GPL-3.0-or-later
 	maintainer = quileon <quileon@duck.com>
 	source = git+https://gitlab.com/xkero/rum.git
 	sha256sums = SKIP

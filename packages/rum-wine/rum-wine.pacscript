@@ -12,8 +12,8 @@ depends=(
   "winetricks"
 )
 optdepends=(
-  "wine"
-  "wine-wow64"
+  "wine: Windows compatibility layer"
+  "wine-wow64: Wine 64-bit with 32-bit support"
 )
 provides=("rum")
 license=("GPL-3.0-or-later")

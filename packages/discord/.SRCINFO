@@ -1,0 +1,23 @@
+pkgbase = discord
+	pkgver = 0.0.96
+	pkgdesc = Chat for Communities and Friends
+	url = https://discord.com/
+	arch = amd64
+	depends = libc6
+	depends = libasound2
+	depends = libatomic1
+	depends = libnotify4
+	depends = libnspr4
+	depends = libnss3
+	depends = libstdc++6
+	depends = libxss1
+	depends = libxtst6
+	depends = libayatana-appindicator3-1
+	depends = libc++1
+	optdepends = fonts-noto-color-emoji: emoji support
+	maintainer = Elsie19 <elsie19@pm.me>
+	repology = project: discord
+	source = @discord~0.0.96::https://dl.discordapp.net/apps/linux/0.0.96/discord-0.0.96.tar.gz
+	sha256sums = 2b885df8aa69310726f46149e39c42d48eda8f14b53aae605b5d7fa6410c4c0c
+
+pkgname = discord

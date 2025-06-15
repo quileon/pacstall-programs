@@ -1,0 +1,27 @@
+pkgbase = neovim
+	pkgver = 0.11.2
+	pkgdesc = Neovim is a vim fork maintained by the community
+	url = https://neovim.io/
+	arch = any
+	makedepends = gettext
+	makedepends = libtool
+	makedepends = libtool-bin
+	makedepends = autoconf
+	makedepends = automake
+	makedepends = cmake
+	makedepends = g++
+	makedepends = pkg-config
+	conflicts = neovim
+	conflicts = neovim-git
+	conflicts = nvim
+	conflicts = neovim-runtime
+	replaces = neovim
+	replaces = neovim-git
+	replaces = nvim
+	replaces = neovim-runtime
+	maintainer = Elsie19 <elsie19@pm.me>
+	repology = project: neovim
+	source = https://github.com/neovim/neovim/archive/refs/tags/v0.11.2.tar.gz
+	sha256sums = 324759a1bcd1a80b32a7eae1516ee761ec3e566d08284a24c4c7ca59079aabfa
+
+pkgname = neovim

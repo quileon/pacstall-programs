@@ -1,0 +1,16 @@
+pkgbase = rum-wine
+	gives = rum
+	pkgver = 394d75c47310244164d387f3319e2d2dbd4d0c30
+	pkgrel = 1
+	pkgdesc = Switch between multiple versions of wine and prefixes via a simple bash script
+	url = https://gitlab.com/xkero/rum
+	arch = amd64
+	depends = winetricks
+	optdepends = wine
+	optdepends = wine-wow64
+	provides = rum
+	maintainer = quileon <quileon@duck.com>
+	source = git+https://gitlab.com/xkero/rum.git
+	sha256sums = SKIP
+
+pkgname = rum-wine

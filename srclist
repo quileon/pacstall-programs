@@ -2,8 +2,8 @@
 ### DO NOT EDIT. Use scripts/srcinfo.sh to build.
 ---
 pkgbase = basilisk
-	pkgver = 2025.04.22
-	pkgrel = 2
+	pkgver = 2025.06.13
+	pkgrel = 3
 	pkgdesc = A XUL-based open-source web browser.
 	url = https://www.basilisk-browser.org/
 	arch = amd64
@@ -13,8 +13,10 @@ pkgbase = basilisk
 	provides = basilisk
 	license = MPL-2.0
 	maintainer = quileon <quileon@duck.com>
-	source = https://dl.basilisk-browser.org/basilisk-20250422154702.linux-x86_64-gtk3.tar.xz
+	source = https://dl.basilisk-browser.org/basilisk-20250612221311.linux-x86_64-gtk3.tar.xz
+	source = basilisk.desktop
 	sha256sums = e56a947df18c9ac5c5db726d15b87d16ca4389e876c87726909e06ac4f3255e6
+	sha256sums = f6bf73222ff084b8a817812a223bfe71435fb41d194415f8e0ef08fe07681f61
 
 pkgname = basilisk
 ---

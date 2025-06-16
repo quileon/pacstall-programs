@@ -1,37 +1,46 @@
 maintainer=("quileon <quileon@duck.com>")
 pkgname="basilisk"
-pkgver="2025.04.22"
-pkgrel="2"
+pkgver="2025.06.13"
+pkgrel="3"
 url="https://www.basilisk-browser.org/"
 arch=("amd64")
 pkgdesc="A XUL-based open-source web browser."
-source=("https://dl.basilisk-browser.org/basilisk-20250422154702.linux-x86_64-gtk3.tar.xz")
-sha256sums=("e56a947df18c9ac5c5db726d15b87d16ca4389e876c87726909e06ac4f3255e6")
+_source=basilisk-20250612221311.linux-x86_64-gtk3.tar.xz
+source=(
+  "https://dl.basilisk-browser.org/${_source}"
+  "basilisk.desktop"
+)
+sha256sums=(
+  "e56a947df18c9ac5c5db726d15b87d16ca4389e876c87726909e06ac4f3255e6"
+  "f6bf73222ff084b8a817812a223bfe71435fb41d194415f8e0ef08fe07681f61"
+)
 depends=("libgtk-3-0" "libdbus-glib-1-2" "libxt6")
 provides=("basilisk")
 license=("MPL-2.0")
 
 package() {
-  cd "${srcdir}/basilisk"
 
-  install -d "${pkgdir}/opt/${pkgname}"
-  cp -r ./* "${pkgdir}/opt/${pkgname}/"
-
+  # Create directories
+  install -d "${pkgdir}/opt/"
   install -d "${pkgdir}/usr/bin"
-  ln -s "/opt/${pkgname}/basilisk" "${pkgdir}/usr/bin/${pkgname}"
-
   install -d "${pkgdir}/usr/share/applications"
-  cat > "${pkgdir}/usr/share/applications/${pkgname}.desktop" << EOF
-[Desktop Entry]
-Name=Basilisk
-Comment=${pkgdesc}
-Exec=/opt/${pkgname}/basilisk %U
-Icon=${pkgname}
-Terminal=false
-Type=Application
-Categories=Network;WebBrowser;
-StartupWMClass=Basilisk
-EOF
 
-  install -Dm644 browser/icons/mozicon128.png "${pkgdir}/usr/share/icons/hicolor/128x128/apps/${pkgname}.png"
+  # Copy basilisk directory
+  cp -r "basilisk" "${pkgdir}/opt/${pkgname}/"
+
+  # Copy main binary
+  ln -s "/opt/${pkgname}/basilisk" "${pkgdir}/usr/bin/basilisk"
+
+  # Copy icons
+  for size in 16 22 24 32 48 64 128; do
+    # Check if the icon file exists
+    if [[ ! -f "${pkgdir}/opt/${pkgname}/browser/chrome/icons/default/default${size}.png" ]]; then
+      echo "Warning: Icon for size ${size} not found, skipping."
+      continue
+    fi
+    # Create icon directory
+    install -d "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/apps"
+    # Link the icon
+    ln -Ts "/opt/${pkgname}/browser/chrome/icons/default/default${size}.png" "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/apps/waterfox.png"
+  done
 }

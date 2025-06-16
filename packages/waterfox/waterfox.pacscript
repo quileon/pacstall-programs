@@ -1,7 +1,7 @@
 maintainer=("quileon <quileon@duck.com>")
 pkgname="waterfox"
 pkgver=6.5.9
-pkgrel=2
+pkgrel=3
 url="https://www.waterfox.net"
 arch=("amd64")
 pkgdesc="Fast and Private Web Browser"
@@ -13,6 +13,7 @@ sha512sums=(
   "dbd9ce9bcb17602e41ccdfaa17aafb72c42cc3ed68ea0ff253ec1e839448106ee1708bf7916a7394bed34108dd759cceee9b587cc7340823c026830e4d6e7601"
   "ab38eba94bb5975bd4e93c227d36d626e15f3803f9944969386083c27c936f383beff9f9f510788e857bf240a00fff0ec9cf4b9cca85ac7ec801c87afb37a540"
 )
+depends=("libgtk-3-0" "libdbus-glib-1-2" "libxt6" "ffmpeg")
 provides=("waterfox=${pkgver}")
 license=("MPL-2.0")
 

@@ -1,7 +1,7 @@
 maintainer=("quileon <quileon@duck.com>")
 pkgname="basilisk"
 pkgver="2025.06.13"
-pkgrel="3"
+pkgrel="4"
 url="https://www.basilisk-browser.org/"
 arch=("amd64")
 pkgdesc="A XUL-based open-source web browser."
@@ -11,7 +11,7 @@ source=(
   "basilisk.desktop"
 )
 sha256sums=(
-  "e56a947df18c9ac5c5db726d15b87d16ca4389e876c87726909e06ac4f3255e6"
+  "fa3027133bee06a2777343ac356642d9c27ad52677d928fdab25527a9623d475"
   "f6bf73222ff084b8a817812a223bfe71435fb41d194415f8e0ef08fe07681f61"
 )
 depends=("libgtk-3-0" "libdbus-glib-1-2" "libxt6")

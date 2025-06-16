@@ -3,7 +3,7 @@
 ---
 pkgbase = basilisk
 	pkgver = 2025.06.13
-	pkgrel = 3
+	pkgrel = 4
 	pkgdesc = A XUL-based open-source web browser.
 	url = https://www.basilisk-browser.org/
 	arch = amd64
@@ -15,7 +15,7 @@ pkgbase = basilisk
 	maintainer = quileon <quileon@duck.com>
 	source = https://dl.basilisk-browser.org/basilisk-20250612221311.linux-x86_64-gtk3.tar.xz
 	source = basilisk.desktop
-	sha256sums = e56a947df18c9ac5c5db726d15b87d16ca4389e876c87726909e06ac4f3255e6
+	sha256sums = fa3027133bee06a2777343ac356642d9c27ad52677d928fdab25527a9623d475
 	sha256sums = f6bf73222ff084b8a817812a223bfe71435fb41d194415f8e0ef08fe07681f61
 
 pkgname = basilisk
@@ -40,10 +40,14 @@ pkgname = rum-wine
 ---
 pkgbase = waterfox
 	pkgver = 6.5.9
-	pkgrel = 2
+	pkgrel = 3
 	pkgdesc = Fast and Private Web Browser
 	url = https://www.waterfox.net
 	arch = amd64
+	depends = libgtk-3-0
+	depends = libdbus-glib-1-2
+	depends = libxt6
+	depends = ffmpeg
 	provides = waterfox=6.5.9
 	license = MPL-2.0
 	maintainer = quileon <quileon@duck.com>

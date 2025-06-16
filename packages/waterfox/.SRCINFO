@@ -1,9 +1,13 @@
 pkgbase = waterfox
 	pkgver = 6.5.9
-	pkgrel = 2
+	pkgrel = 3
 	pkgdesc = Fast and Private Web Browser
 	url = https://www.waterfox.net
 	arch = amd64
+	depends = libgtk-3-0
+	depends = libdbus-glib-1-2
+	depends = libxt6
+	depends = ffmpeg
 	provides = waterfox=6.5.9
 	license = MPL-2.0
 	maintainer = quileon <quileon@duck.com>

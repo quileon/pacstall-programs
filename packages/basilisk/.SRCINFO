@@ -13,6 +13,6 @@ pkgbase = basilisk
 	source = https://dl.basilisk-browser.org/basilisk-20250612221311.linux-x86_64-gtk3.tar.xz
 	source = basilisk.desktop
 	sha256sums = fa3027133bee06a2777343ac356642d9c27ad52677d928fdab25527a9623d475
-	sha256sums = f6bf73222ff084b8a817812a223bfe71435fb41d194415f8e0ef08fe07681f61
+	sha256sums = 3154e32eae7984331b676e57a3d3b72e21d4ff536c16a986393702f3a6b49154
 
 pkgname = basilisk

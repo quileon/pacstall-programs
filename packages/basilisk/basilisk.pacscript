@@ -12,7 +12,7 @@ source=(
 )
 sha256sums=(
   "fa3027133bee06a2777343ac356642d9c27ad52677d928fdab25527a9623d475"
-  "f6bf73222ff084b8a817812a223bfe71435fb41d194415f8e0ef08fe07681f61"
+  "3154e32eae7984331b676e57a3d3b72e21d4ff536c16a986393702f3a6b49154"
 )
 depends=("libgtk-3-0" "libdbus-glib-1-2" "libxt6")
 provides=("basilisk")

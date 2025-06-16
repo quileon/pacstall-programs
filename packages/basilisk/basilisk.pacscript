@@ -1,7 +1,7 @@
 maintainer=("quileon <quileon@duck.com>")
 pkgname="basilisk"
 pkgver="2025.06.13"
-pkgrel="4"
+pkgrel="5"
 url="https://www.basilisk-browser.org/"
 arch=("amd64")
 pkgdesc="A XUL-based open-source web browser."
@@ -41,6 +41,6 @@ package() {
     # Create icon directory
     install -d "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/apps"
     # Link the icon
-    ln -Ts "/opt/${pkgname}/browser/chrome/icons/default/default${size}.png" "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/apps/waterfox.png"
+    ln -Ts "/opt/${pkgname}/browser/chrome/icons/default/default${size}.png" "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/apps/basilisk.png"
   done
 }

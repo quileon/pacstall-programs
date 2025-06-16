@@ -1,7 +1,7 @@
 maintainer=("quileon <quileon@duck.com>")
 pkgname="basilisk"
 pkgver="2025.06.13"
-pkgrel="5"
+pkgrel="6"
 url="https://www.basilisk-browser.org/"
 arch=("amd64")
 pkgdesc="A XUL-based open-source web browser."
@@ -19,7 +19,6 @@ provides=("basilisk")
 license=("MPL-2.0")
 
 package() {
-
   # Create directories
   install -d "${pkgdir}/opt/"
   install -d "${pkgdir}/usr/bin"
@@ -43,4 +42,7 @@ package() {
     # Link the icon
     ln -Ts "/opt/${pkgname}/browser/chrome/icons/default/default${size}.png" "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/apps/basilisk.png"
   done
+
+  # Copy desktop file
+  install -m644 "basilisk.desktop" "${pkgdir}/usr/share/applications/basilisk.desktop"
 }

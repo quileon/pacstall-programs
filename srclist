@@ -3,7 +3,7 @@
 ---
 pkgbase = basilisk
 	pkgver = 2025.06.13
-	pkgrel = 5
+	pkgrel = 6
 	pkgdesc = A XUL-based open-source web browser.
 	url = https://www.basilisk-browser.org/
 	arch = amd64

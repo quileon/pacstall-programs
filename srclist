@@ -48,7 +48,7 @@ pkgbase = waterfox
 	source = https://cdn1.waterfox.net/waterfox/releases/6.5.9/Linux_x86_64/waterfox-6.5.9.tar.bz2
 	source = waterfox.desktop
 	sha512sums = dbd9ce9bcb17602e41ccdfaa17aafb72c42cc3ed68ea0ff253ec1e839448106ee1708bf7916a7394bed34108dd759cceee9b587cc7340823c026830e4d6e7601
-	sha512sums = e593d1a8a8dca3cac2f04f85a83ca6b9e68a0f3feee4e3ffc2cb2db18658774fcb77c55455f3db032e8e831e1b6501fedf3518d923e95b66a044c8e8abba9f77
+	sha512sums = 5a82106b4e477508afa1ad3ab8df514c52f4bb516291885b54e05634dd78cc50c593db86d95834eae1d073d04e1c55419397c3a18c8659fd0dad99513ea14254
 
 pkgname = waterfox
 ---

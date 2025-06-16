@@ -18,13 +18,15 @@ license=("MPL-2.0")
 
 package() {
   # Create directories
-  install -d "${pkgdir}/{usr/{bin,share/applications},opt}"
+  install -d "${pkgdir}/usr/bin"
+  install -d "${pkgdir}/usr/share/applications"
+  install -d "${pkgdir}/opt"
 
   # Copy desktop file
-  install -m644 "${srcdir}/waterfox.desktop" "${pkgdir}/usr/share/applications/waterfox.desktop"
+  install -m644 "waterfox.desktop" "${pkgdir}/usr/share/applications/waterfox.desktop"
 
   # Copy waterfox directory
-  cp -r waterfox "${pkgdir}/opt/waterfox"
+  cp -r "waterfox" "${pkgdir}/opt/waterfox"
 
   # Copy icons
   for size in 16 22 24 32 48 64 128; do

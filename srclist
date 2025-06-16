@@ -40,7 +40,7 @@ pkgname = rum-wine
 ---
 pkgbase = waterfox
 	pkgver = 6.5.9
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Fast and Private Web Browser
 	url = https://www.waterfox.net
 	arch = amd64

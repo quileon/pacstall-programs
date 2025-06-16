@@ -1,7 +1,7 @@
 maintainer=("quileon <quileon@duck.com>")
 pkgname="waterfox"
 pkgver=6.5.9
-pkgrel=1
+pkgrel=2
 url="https://www.waterfox.net"
 arch=("amd64")
 pkgdesc="Fast and Private Web Browser"
@@ -37,7 +37,7 @@ package() {
   done
 
   # Copy the main binary
-  ln -s "/opt/waterfox/waterfox" "${pkgdir}/usr/bin/waterfox"
+  ln -s "/opt/${pkgname}/waterfox" "${pkgdir}/usr/bin/waterfox"
 
   # Add additional settings
   install -Dm644 /dev/stdin "${pkgdir}/opt/waterfox/browser/defaults/preferences/vendor.js" << END

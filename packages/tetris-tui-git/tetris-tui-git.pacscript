@@ -12,16 +12,16 @@ source=("git+https://github.com/abusch8/Tetris")
 sha256sums=('SKIP')
 
 build() {
-    cd "$srcdir/Tetris"
-    make build
+  cd "${srcdir}/Tetris"
+  make build -j"${NCPU}"
 }
 
 package() {
-    cd "$srcdir/Tetris"
-    
-    # Install the binary
-    install -Dm755 "target/release/tetris" "${pkgdir}/usr/bin/tetris"
-    
-    # Install the default config file
-    install -Dm644 "default_config.ini" "${pkgdir}/usr/share/tetris/default_config.ini"
+  cd "${srcdir}/Tetris"
+
+  # Install the binary
+  install -Dm755 "target/release/tetris" "${pkgdir}/usr/bin/tetris"
+
+  # Install the default config file
+  install -Dm644 "default_config.ini" "${pkgdir}/usr/share/tetris/default_config.ini"
 }

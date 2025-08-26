@@ -1,0 +1,17 @@
+pkgbase = httpie-desktop-bin
+	pkgver = 2025.2.0
+	pkgrel = 1
+	pkgdesc = HTTPie for Desktop
+	url = https://httpie.io/product
+	arch = amd64
+	depends = gtk3
+	depends = alsa-lib
+	depends = nss
+	conflicts = httpie-desktop-appimage
+	provides = httpie-desktop
+	license = custom
+	maintainer = quileon <quileon@duck.com>
+	source = httpie-desktop
+	sha256sums = 42d9b50040669f0957cd70164f571cc764389f1c5804579de908ec18c90c0c91
+
+pkgname = httpie-desktop-bin

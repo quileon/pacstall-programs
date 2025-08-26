@@ -6,7 +6,6 @@ pkgrel=1
 pkgdesc="HTTPie for Desktop"
 arch=("amd64")
 url="https://httpie.io/product"
-license=('custom')
 depends=('gtk3' 'alsa-lib' 'nss')
 builddepends=('fuse2')
 provides=('httpie-desktop')

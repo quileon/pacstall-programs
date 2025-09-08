@@ -55,6 +55,8 @@ pkgbase = rum-wine
 
 pkgname = rum-wine
 ---
+pkgbase =
+---
 pkgbase = waterfox
 	pkgver = 6.5.9
 	pkgrel = 3

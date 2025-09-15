@@ -10,9 +10,14 @@ depends=('libgtk-3-0t64' 'libasound2' 'libnss3')
 builddepends=('fuse2')
 provides=('httpie-desktop')
 conflicts=('httpie-desktop-appimage')
-
-source=("https://github.com/httpie/desktop/releases/download/v${pkgver}/HTTPie-${pkgver}.AppImage")
-sha256sums=('a850e215741b60087079086061f656fe550cb66c34f6da93f6dfc63c946d654f')
+source=(
+  "https://github.com/httpie/desktop/releases/download/v${pkgver}/HTTPie-${pkgver}.AppImage"
+  "httpie-desktop"
+)
+sha256sums=(
+  "a850e215741b60087079086061f656fe550cb66c34f6da93f6dfc63c946d654f"
+  "42d9b50040669f0957cd70164f571cc764389f1c5804579de908ec18c90c0c91"
+)
 
 [[ ${CARCH} == "amd64" ]] && _filename=HTTPie-${pkgver}.AppImage
 [[ ${CARCH} == "aarch64" ]] && _filename=HTTPie-${pkgver}-arm64.AppImage
@@ -54,6 +59,7 @@ package() {
   rm -Rf "${pkgdir}/usr/lib/${_pkgname}/usr"
   rm -Rf "${pkgdir}/usr/lib/${_pkgname}/httpie.png"
 
+  cat "${_pkgname}"
   # Install the launcher to /usr/bin
-  install -Dm755 "${startdir}/${_pkgname}" "${pkgdir}/usr/bin/${_pkgname}"
+  install -Dm755 "${_pkgname}" "${pkgdir}/usr/bin/${_pkgname}"
 }

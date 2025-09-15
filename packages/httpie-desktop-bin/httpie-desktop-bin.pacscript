@@ -59,7 +59,6 @@ package() {
   rm -Rf "${pkgdir}/usr/lib/${_pkgname}/usr"
   rm -Rf "${pkgdir}/usr/lib/${_pkgname}/httpie.png"
 
-  cat "${_pkgname}"
   # Install the launcher to /usr/bin
   install -Dm755 "${_pkgname}" "${pkgdir}/usr/bin/${_pkgname}"
 }
